@@ -72,3 +72,28 @@ p {
     padding-left: 10px;
     font-size: 18px;
 }
+
+@media (max-width: 400px) {
+    .navbar {
+        font-size: 13px;
+        height: 35px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    main {
+        height: 2000px;
+    }
+}
+@media (min-width: 400px) and (max-width: 446px) {
+    .navbar {
+        font-size: 14px;
+        height: 36px;
+}
+}
