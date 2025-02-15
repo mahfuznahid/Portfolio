@@ -6,35 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <style>
+        .out-resume {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            gap: 10px;
+        }
         .resume {
-            text-align: left;
-            color: black;
-            font-size: 18px;
-        }
-        #contact {
-            margin-left: 10px;
-            line-height: 40px;
-        }
-        #summary, #work, #edu, #skills, #certicate, #awards, #volunteer {
-            text-align: left;
-            color: black;
-            padding-left: 10px;
-            font-size: 18px;
-            line-height: 25px;
+            display: flex;
+            flex-direction: column;
+            height: 1200px;
+            width: 50%;
+            border: 2px solid greenyellow;
+            border-radius: 15px;
+            color: white;
+            margin: 10px 10px 10px 20px;
+            padding: 20px;
+            font-size: 1.2rem;
         }
         .download-btn {
             display: inline-block;
+            width: 180px;
             padding: 10px 20px;
-            margin: 20px;
-            background-color: darkslategray;
-            color: rgb(255, 247, 232);
+            margin: 10px;
+            background-color: greenyellow;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 60px;
+            cursor: pointer;
             transition-property: transform;
             transition-duration: 0.5s;
         }
+        .download-btn a {
+            color: #1E2330;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+        }
         .download-btn:hover {
-            background-color: rgba(128, 74, 24, 0.7);
+            background-color: rgb(131, 199, 30);
             transform: scale(1.1);
         }
     </style>
@@ -42,82 +54,87 @@
 <body>
     <header>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
+            <div class="navbar">
+                <div class="link1 link" style="width: 400px;">
+                    <a href="index.html">Portfolio.</a>
+                </div>
+                <div class="void link" style="width: 1120px;"></div>
+                <div class="link2 link" style="width: 70px;">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="link3 link" style="width: 70px;">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="link4 link"style="width: 90px;">
+                    <a href="project.html">Projects</a>
+                </div>
+                <div class="link5 link" style="width: 90px;">
+                    <a href="resume.html">Resume</a>
+                </div>
+            </div>
         </div>
-        <h1>Resume</h1>
+        
     </header>
     <main>
-        <div class="resume">
-        <h2>Mahfuzur Rahman Nahid</h2>
-        <h3>Contact Information:</h3>
-        <div id="contact">
-        •	Email: mahfuznahid41@gmail.com <br>
-        •	Phone: +880 1862 611 302 <br>
-        •	LinkedIn: https://www.linkedin.com/in/mnahid18/ <br>
-        •	Address: Baganbari Palace, Baganbari, Madartek, Basabo, Dhaka, Bangladesh <br>
-        </div>
+        <div class="out-resume">
+            <h1 class="h1">Resume</h1>
+            <div class="resume">
+                <h3>Professional Summary:</h3>
+                <div id="summary">
+                    <p>Ambitious and dedicated student specializing in web development with hands-on experience working for non-government companies such as TechnoRebels and ReoTech. Proficient in website development, data entry, and browsing. Passionate about becoming a professional web developer and software engineer, with a strong commitment to achieving excellence in both fields. Driven by the goal of earning substantial income to support my family while continuously enhancing my technical skills and knowledge.</p> <br>
+                </div>
+
+                <h3>Work Experience:</h3>
+                <div id="work">
+                    <b>Job Title</b> TechnoRebels | Dhaka | 03.10.2022 – 10.12.2023 <br>
+                    •	Data Entry Employer <br>
+                    •	Active Volunteer <br>
+                    <b>Job Title</b> ReoTech | Dhaka | 12.12.2023 – 31.01.2025 <br>
+                    •	Web Developer <br>
+                    •	Browser SEO <br>
+                    •	Active Volunteer 
+                </div> <br>
         
-        <h3>Professional Summary:</h3>
-        <div id="summary">
-            Ambitious and dedicated student specializing in web development with hands-on experience working for non-government companies such as TechnoRebels and ReoTech. Proficient in website development, data entry, and browsing. Passionate about becoming a professional web developer and software engineer, with a strong commitment to achieving excellence in both fields. Driven by the goal of earning substantial income to support my family while continuously enhancing my technical skills and knowledge. <br>
-        </div>
-        <h3>Work Experience:</h3>
-        <div id="work">
-            <b>Job Title</b> TechnoRebels | Dhaka | 03.10.2022 – 10.12.2023 <br>
-            •	Data Entry Employer <br>
-            •	Active Volunteer <br>
-            <b>Job Title</b> ReoTech | Dhaka | 12.12.2023 – 31.01.2025 <br>
-            •	Web Developer <br>
-            •	Browser SEO <br>
-            •	Active Volunteer <br>
-        </div>
+                <h3>Education:</h3>
+                <div id="edu">
+                    <b>Degree</b> Motijheel Govt. Boys High School and College | Dhaka | 31.12.2022 <br>
+                    •	Studying Science as well as Working on Data Entry <br>
+                    <b>Degree</b> Jagannath University | Dhaka <br>
+                    •	Studying Computer Science and Engineering as well as Working on Web Development 
+                </div> <br>
         
-        <h3>Education:</h3>
-        <div id="edu">
-            <b>Degree</b> Motijheel Govt. Boys High School and College | Dhaka | 31.12.2022 <br>
-            •	Studying Science as well as Working on Data Entry <br>
-            <b>Degree</b> Jagannath University | Dhaka <br>
-            •	Studying Computer Science and Engineering as well as Working on Web Development <br>
-        </div>
+                <h3>Skills:</h3>
+                <div id="skills">
+                    •	HTML <br>
+                    •	C <br>
+                    •	Python <br>
+                    •	CSS 
+                </div> <br>
         
-        <h3>Skills:</h3>
-        <div id="skills">
-            •	HTML <br>
-            •	C <br>
-            •	Python <br>
-            •	CSS <br>
-        </div>
-        
-        <h3>Certifications:</h3>
-        <div id="certicate">
-            •	Participation in Science Olympiad | Issuing Organization | Date <br>
-            •	Participation in Analytical Mathematics Quiz | JnuITS | Date <br>
-            •	Department Scholar | Last Night Scholars | 05.02.2025 <br>
-        </div>
-        <h3>Awards and Honors:</h3>
-        <div id="awards">
-            •	1st Runner Up in Analytical Mathematics Quiz | JnuITS | Date <br>
-        </div>
-        <h3>Volunteer Work:</h3>
-        <div id="volunteer">
-            Volunteer at IEEE Computer Society Bangladesh Chapter | Dhaka | Dates of Service <br>
-            •	Logistic Volunteer <br>
-            •	Register and Kit Volunteer <br>
-        </div> <br>
-        <div>
-        <a href="Mahfuzur Rahman Nahid - Resume.pdf" class="download-btn" download>Download My Resume</a>
+                <h3>Certifications:</h3>
+                <div id="certicate">
+                    •	Participation in Science Olympiad | Issuing Organization | Date <br>
+                    •	Participation in Analytical Mathematics Quiz | JnuITS | Date <br>
+                    •	Department Scholar | Last Night Scholars | 05.02.2025 
+                </div> <br>
+
+                <h3>Awards and Honors:</h3>
+                <div id="awards">
+                    •	1st Runner Up in Analytical Mathematics Quiz | JnuITS | Date 
+                </div> <br>
+
+                <h3>Volunteer Work:</h3>
+                <div id="volunteer">
+                    Volunteer at IEEE Computer Society Bangladesh Chapter | Dhaka | Dates of Service <br>
+                    •	Logistic Volunteer <br>
+                    •	Register and Kit Volunteer <br>
+                </div> <br>
+
+                <div class="download-btn">
+                <a href="Mahfuzur Rahman Nahid - Resume.pdf" download>Download My Resume</a>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        &copy; 2025 Nahid. All Rights Reserved.
-    </footer>
 </body>
 </html>
