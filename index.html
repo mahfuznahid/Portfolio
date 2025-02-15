@@ -2,104 +2,207 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <style>
-        .image {
-            display: inline-block;
-            height: 250px;
-            width: 250px;
-            margin: 30px 0 0 20px;
-            background-image: url('Images/Nahid.jpg');
+        /*Intro*/
+        .intro {
+            display: flex;
+            justify-content: space-evenly;
+            height: 600px;
+        }
+        .part1{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            padding: 0px 20px 0px 20px;
+            text-align: justify;
+            gap: 10px;
+        }
+        .part1 span {
+            background: linear-gradient(45deg, rgb(0, 233, 0), greenyellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .part1 .quality {
+            font-size: 1.6rem;
+            color: white;
+            font-weight: 700;
+        }
+        .part1 .description {
+            font-size: 1.2rem;
+            color: white;
+        }
+        .icon {
+            font-size: 1.8rem;
+            color: greenyellow;
+        }
+        .icon:hover {
+            color: rgb(131, 199, 30);
+        }
+        #contact {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 10%;
+            width: 35%;
+        }
+        .part2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .img {
+            background-image: url(Images/Nahid.jpg);
+            height: 400px;
+            width: 400px;
             background-size: cover;
-            border: 5px solid darkslategray;
+            border: 10px solid greenyellow;
             border-radius: 50%;
         }
-        .skills ul li {
-            font-size: 18px;
-        }
 
-        @media (max-width: 400px) {
-            .image {
-                height: 180px;
-                width: 180px;
-            }
+        /*Blogs*/
+        .blogs {
+            height: 100%;
+            width: 100%;
+            color: white;
+            border-top: 1px solid rgb(121, 121, 121);
+        }
+        .blogs h2 {
+            text-align: center;
+            background: linear-gradient(45deg, rgb(0, 233, 0), greenyellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 20px 0px 20px 0px;
+            font-weight: 800;
+        }
+        .blogs .in-box {
+            display: flex;
+            justify-content: space-evenly;
+            height: 600px;
+            width: 100%;
+        }
+        .blog-box {
+            height: 100%;
+            width: 30%;
+            border: 5px solid greenyellow;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .blog-box h3 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
+            <div class="link1 link" style="width: 400px;">
+                <a href="index.html">Portfolio.</a>
+            </div>
+            <div class="void link" style="width: 1120px;"></div>
+            <div class="link2 link" style="width: 70px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="link3 link" style="width: 70px;">
+                <a href="about.html">About</a>
+            </div>
+            <div class="link4 link"style="width: 90px;">
+                <a href="project.html">Projects</a>
+            </div>
+            <div class="link5 link" style="width: 90px;",>
+                <a href="resume.html">Resume</a>
+            </div>
         </div>
-        <div class="image">
+        
+        <div class="intro">
+            <div class="part1" style="width: 1000px;">
+                <span>Mahfuzur Rahman Nahid</span>
+                <p class="quality">Web Developer | Learner | Explorer ;</p>
+                <p class="description">I'm just an ordinary person striving to improve myself and my family's future. My goal is to achieve financial success and create a better life for us. Along the way, I aim to seize opportunities for personal growth, learning new skills, and facing challenges head-on. It's about building a secure and prosperous future, not just for myself, but for the people I care about the most. Every step forward is driven by the desire to provide stability, comfort, and happiness for my family.</p>
+
+                <div id="contact">
+                    <div class="icon-text">
+                        <a href="tel:+880 1862 611 302"><i class="fa-solid fa-phone icon"></i></a>
+                    </div>
+    
+                    <div class="icon-text">
+                        <a href="mailto:mahfuznahid41@gmail.com"><i class="fa-solid fa-envelope icon"></i></a>
+                    </div>
+    
+                    <div class="icon-text">
+                        <a href="https://www.facebook.com/mahfuz.nahid.18" target="_blank"><i class="fa-brands fa-facebook icon"></i></a>
+                    </div>
+                            
+                    <div class="icon-text">
+                        <a href="https://x.com/m_nahid_18" target="_blank"><i class="fa-brands fa-square-x-twitter icon"></i></a>
+                    </div>
             
+                    <div class="icon-text">
+                        <a href="https://www.linkedin.com/in/mnahid18" target="_blank"><i class="fa-brands fa-linkedin icon"></i></a>
+                    </div>
+    
+                    <div class="icon-text">
+                        <a href="https://github.com/mahfuznahid" target="_blank"><i class="fa-brands fa-github icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="part2" style="width: 600px;">
+                <div class="img"></div>
+            </div>
         </div>
-        <h1>Mahfuzur Rahman Nahid</h1>
-        <h2>Web Developer</h2>
-    </header>
-    <main>
-        <section class="skills">
-            <h2>My Skills</h2>
-            <ul>
-                <li>C</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Python</li>
-            </ul>
-            <p>I am a beginner web developer. I am learning HTML and CSS. After that I will learn lots of things for my skill development and web development gradually.</p>
-        </section>
-        <section class="blogs">
+
+        <div class="blogs">
             <h2>My Blogs</h2>
-            <div class="family">
-                <h3>My Family</h3>
-                <p>Family means everything to me. I come from a large and loving family that brings joy and warmth to my life every day. My parents, four brothers, two sister-in-laws, and three adorable nephews make up our vibrant family. <br> <br>
+            <div class="in-box">
+                <div class="family blog-box">
+                    <h3>My Family</h3>
+                    <p>Family means everything to me. I come from a large and loving family that brings joy and warmth to my life every day. My parents, four brothers, two sister-in-laws, and three adorable nephews make up our vibrant family. <br> <br>
 
-                We used to live together under one roof, sharing countless memories and laughter. However, due to certain circumstances, we now live separately. Despite this, we ensure to meet frequently and cherish the moments we spend together. <br> <br>
+                    We used to live together under one roof, sharing countless memories and laughter. However, due to certain circumstances, we now live separately. Despite this, we ensure to meet frequently and cherish the moments we spend together. <br> <br>
                     
-                One of my favorite times is when we gather for special occasions. The house fills with laughter, delicious food, and the comforting presence of family. Playing with my nephews is always a highlight. Their energy and enthusiasm are infectious, and they bring out the child in me. They adore spending time with me, and I love entertaining them with games and stories. <br> <br>
+                    One of my favorite times is when we gather for special occasions. The house fills with laughter, delicious food, and the comforting presence of family. Playing with my nephews is always a highlight. Their energy and enthusiasm are infectious, and they bring out the child in me. They adore spending time with me, and I love entertaining them with games and stories. <br> <br>
                     
-                Having such a close-knit family is a blessing. The support, love, and fun we share make every moment special. No matter the distance, our bond remains strong, and we continue to create beautiful memories together. <br> <br>
+                    Having such a close-knit family is a blessing. The support, love, and fun we share make every moment special. No matter the distance, our bond remains strong, and we continue to create beautiful memories together. <br> <br>
                     
-                I am grateful for my happy family and the joy they bring into my life. Here's to more family gatherings, laughter, and love! </p>
-            </div>
-            <div class="friends">
-                <h3>Friends Through the Phase of Life</h3>
-                <p>From a young age, I've always sought the companionship of friends. Playing and spending time with them brought me immense pleasure and joy. I am grateful for the friends I made in my primary school, who filled my days with laughter and fun. <br> <br>
+                    I am grateful for my happy family and the joy they bring into my life. Here's to more family gatherings, laughter, and love! </p>
+                </div>
 
-                As I moved on to secondary school, I was fortunate to have many friends who made those years memorable. We shared countless experiences and created memories that I hold dear to my heart. <br> <br>
-                    
-                Now that I've been admitted to university, my life has changed once again. I no longer have the old friends I used to stay with, but I have made new friends here. It's a new chapter with new faces, and I'm learning to embrace the change. <br> <br>
-                    
-                Throughout my life, I've come to understand that people come and go. Friendships evolve, and sometimes, people leave. This is the reality of life. However, each friend I've had has left a mark on my heart, and I cherish the moments we've shared. <br> <br>
-                    
-                As I navigate through university life, I am grateful for the new friends I've made and the experiences we are creating together. Change is inevitable, but it also brings new opportunities for growth and connection.</p>
-            </div>
-            <div class="varsity">
-                <h3>My University Life</h3>
-                <p>University life is a unique and transformative experience that shapes who we are and who we will become. It is a time of growth, learning, and self-discovery. As a university student, I am navigating through this phase of life with excitement and curiosity. <br> <br>
+                <div class="friends blog-box">
+                    <h3>Friends Through the Phase of Life</h3>
+                    <p>From a young age, I've always sought the companionship of friends. Playing and spending time with them brought me immense pleasure and joy. I am grateful for the friends I made in my primary school, who filled my days with laughter and fun. <br> <br>
 
-                The university is not just a place of academic learning; it is a hub of diverse experiences and opportunities. I've had the chance to meet people from different backgrounds, cultures, and perspectives. This exposure has broadened my horizons and enriched my understanding of the world. <br> <br>
+                    As I moved on to secondary school, I was fortunate to have many friends who made those years memorable. We shared countless experiences and created memories that I hold dear to my heart. <br> <br>
                     
-                In addition to academics, university life offers a plethora of extracurricular activities. I've participated in various clubs, events, and competitions that have helped me develop new skills and interests. These experiences have shaped my personality and allowed me to explore my passions. <br> <br>
+                    Now that I've been admitted to university, my life has changed once again. I no longer have the old friends I used to stay with, but I have made new friends here. It's a new chapter with new faces, and I'm learning to embrace the change. <br> <br>
                     
-                University life is also a time of challenges and growth. Balancing academics, social life, and personal well-being can be demanding, but it is also rewarding. I've learned to manage my time effectively, set goals, and overcome obstacles. These skills will serve me well in my future endeavors. <br> <br>
+                    Throughout my life, I've come to understand that people come and go. Friendships evolve, and sometimes, people leave. This is the reality of life. However, each friend I've had has left a mark on my heart, and I cherish the moments we've shared. <br> <br>
                     
-                As I continue my journey through university, I am grateful for the opportunities, experiences, and friendships that have enriched my life. University is not just a phase; it is a transformative journey that prepares us for the future.</p>
+                    As I navigate through university life, I am grateful for the new friends I've made and the experiences we are creating together. Change is inevitable, but it also brings new opportunities for growth and connection.</p>
+                </div>
+
+                <div class="university blog-box">
+                    <h3>My University Life</h3>
+                    <p>University life is a unique and transformative experience that shapes who we are and who we will become. It is a time of growth, learning, and self-discovery. As a university student, I am navigating through this phase of life with excitement and curiosity. <br> <br>
+
+                    The university is not just a place of academic learning; it is a hub of diverse experiences and opportunities. I've had the chance to meet people from different backgrounds, cultures, and perspectives. This exposure has broadened my horizons and enriched my understanding of the world. <br> <br>
+                    
+                    In addition to academics, university life offers a plethora of extracurricular activities. I've participated in various clubs, events, and competitions that have helped me develop new skills and interests. These experiences have shaped my personality and allowed me to explore my passions. <br> <br>
+                    
+                    University life is also a time of challenges and growth. Balancing academics, social life, and personal well-being can be demanding, but it is also rewarding. I've learned to manage my time effectively, set goals, and overcome obstacles. These skills will serve me well in my future endeavors. <br> <br>
+                    
+                    As I continue my journey through university, I am grateful for the opportunities, experiences, and friendships that have enriched my life. University is not just a phase; it is a transformative journey that prepares us for the future.</p>
+                </div>
             </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        &copy; 2025 Nahid. All Rights Reserved.
-    </footer>
 </body>
 </html>
