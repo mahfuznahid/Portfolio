@@ -6,29 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
     <style>
-        .webview, .vscode {
-            display: inline-block;
-            margin: 20px;
-            font-size: 18px;
-            text-align: center;
+        .out-box-project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
         }
-        .link-btn a {
-            text-decoration: none;
-            color: rgb(255, 247, 232);
+        .project {
+            display: flex;
+            flex-direction: column;
+            height: 880px;
+            width: 50%;
+            border: 2px solid greenyellow;
+            border-radius: 15px;
+            color: white;
+            margin: 10px 10px 10px 20px;
+            padding: 20px;
+        }
+        .in-box p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .in-box .showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 700px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .showcase1, .showcase2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+        }
+        figcaption {
+            color: greenyellow;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        h1 {
+            background: linear-gradient(45deg, rgb(0, 233, 0), greenyellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+        h2 {
+            margin-bottom: 10px;
         }
         .link-btn {
             display: inline-block;
             padding: 10px 20px;
-            margin: 20px;
-            background-color: darkslategray;
-            color: rgb(255, 247, 232);
+            margin: 10px;
+            background-color: greenyellow;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 60px;
             transition-property: transform;
             transition-duration: 0.5s;
         }
+        .link-btn a {
+            color: #1E2330;
+            text-decoration: none;
+            font-weight: 700;
+        }
         .link-btn:hover {
-            background-color: rgba(128, 74, 24, 0.7);
+            background-color: rgb(131, 199, 30);
             transform: scale(1.1);
         }
     </style>
@@ -36,37 +83,51 @@
 <body>
     <header>
         <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="project.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </nav>
+            <div class="link1 link" style="width: 400px;">
+                <a href="index.html">Portfolio.</a>
+            </div>
+            <div class="void link" style="width: 1120px;"></div>
+            <div class="link2 link" style="width: 70px;">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="link3 link" style="width: 70px;">
+                <a href="about.html">About</a>
+            </div>
+            <div class="link4 link"style="width: 90px;">
+                <a href="project.html">Projects</a>
+            </div>
+            <div class="link5 link" style="width: 90px;">
+                <a href="resume.html">Resume</a>
+            </div>
         </div>
-        <h1>My Projects</h1>
     </header>
     <main>
-        <section>
-            <h2>Portfolio Project</h2>
-            <p>This is my portfolio project and this is my first project. I have created this project to showcase my skills and projects. I have used HTML and CSS to create this project.</p>
-            <div class="webview">
-                <img src="Images/webview.png" alt="Web view of the project" height="250px">
-                <figcaption>Web View</figcaption>
+        <div class="out-box-project">
+            <h1 class="h1">Projects</h1>
+            <div class="project">
+                <div class="in-box">
+                    <h2>Portfolio Project</h2>
+                    <p>This is my portfolio project and this is my first project. I have created this project to showcase my skills and projects. I have used HTML and CSS to create this project.</p>
+                    <div class="showcase">
+                        <div class="showcase1">
+                            <div class="webview">
+                                <img src="Images/webview.png" alt="Web view of the project" height="300px">
+                                <figcaption>Web View</figcaption>
+                            </div>
+                        </div>
+                        <div class="showcase2">
+                            <div class="vscode">
+                                <img src="Images/vscode.png" alt="VSCode code of the project" height="300px">
+                                <figcaption>VSCode Code</figcaption>
+                            </div> <br>
+                        </div>
+                    </div>
+                    <div class="link-btn">
+                        <a href="https://mahfuznahid.github.io/Portfolio/" target="_blank">Click here to see this project</a>
+                    </div>
+                </div>
             </div>
-            <div class="vscode">
-                <img src="Images/vscode.png" alt="VSCode code of the project" height="250px">
-                <figcaption>VSCode Code</figcaption>
-            </div> <br>
-            <div class="link-btn">
-                <a href="https://mahfuznahid.github.io/Portfolio/" target="_blank">Click here to see this project</a>
-            </div>
-        </section>
+        </div>
     </main>
-    <footer>
-        &copy; 2025 Nahid. All Rights Reserved.
-    </footer>
 </body>
 </html>
